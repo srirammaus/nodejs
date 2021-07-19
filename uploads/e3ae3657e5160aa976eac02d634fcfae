@@ -1,0 +1,238 @@
+{
+	"info": {
+		"_postman_id": "f929945e-048b-466f-855a-ea96a538ee17",
+		"name": "Easy2Way API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/method/easy2way.easy2way.auth.get_items?category=Dal Items",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"method",
+						"easy2way.easy2way.auth.get_items"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "Dal Items"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Scroll Text",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/resource/E2W%20Scroll%20Text?fields=[\"text\", \"order\"]&order_by=\"order%20asc\"&filters=[[\"enable\",\"\",\"1\"]]",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"resource",
+						"E2W%20Scroll%20Text"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "[\"text\", \"order\"]"
+						},
+						{
+							"key": "page_limit_length",
+							"value": "20",
+							"disabled": true
+						},
+						{
+							"key": "order_by",
+							"value": "\"order%20asc\""
+						},
+						{
+							"key": "filters",
+							"value": "",
+							"disabled": true
+						},
+						{
+							"key": "filters",
+							"value": "[[\"enable\",\"\",\"1\"]]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cards",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/resource/E2W%20Card?fields=[\"card\"]&filters=[[\"enable\",\"\",1]]",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"resource",
+						"E2W%20Card"
+					],
+					"query": [
+						{
+							"key": "fields",
+							"value": "[\"card\"]"
+						},
+						{
+							"key": "page_limit_length",
+							"value": "20",
+							"disabled": true
+						},
+						{
+							"key": "filters",
+							"value": "[[\"enable\",\"\",1]]"
+						},
+						{
+							"key": "order_by",
+							"value": "\"order%20asc\"",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Accessing an Image or File",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/files/1-255x272.jpg",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"files",
+						"1-255x272.jpg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Item Group Tree",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/resource/Item%20Group?fields=[\"*\"]",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"resource",
+						"Item%20Group"
+					],
+					"query": [
+						{
+							"key": "limit_page_length",
+							"value": "100",
+							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "[\"*\"]"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/method/easy2way.easy2way.auth.get_search_items?text=green",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"method",
+						"easy2way.easy2way.auth.get_search_items"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "green"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Individual Item",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://95.111.196.14/api/resource/Item/Dal/01",
+					"protocol": "http",
+					"host": [
+						"95",
+						"111",
+						"196",
+						"14"
+					],
+					"path": [
+						"api",
+						"resource",
+						"Item",
+						"Dal",
+						"01"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
